@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+    border:1px solid black;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+  }
+   
+  
+  .text
+  {
+
+  color:black;
+  width: 110px;
+  padding: 6px 15px 6px 35px;
+  border-radius: 20px;
+  box-shadow: 0 1px 0 #ccc inset;
+  transition:500ms all ease;
+  }
+  .text:hover
+  {
+  width:250px;
+  }
+  .readmore{
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .scrollit{
+    overflow-y:scroll;
+    height:500px;
+}
+
+.date{
+  color:black;
+  width: 200px;
+  padding: 6px 15px 6px 35px;
+  border-radius: 10px;
+  /* box-shadow: 0 1px 0 #ccc inset; */
+  transition:500ms all ease;
+  }

@@ -1,0 +1,39 @@
+<div id="center" class="tcontainer">
+    <div class="ticker-wrap">
+        <div class="ticker-move">
+            <div  style="color:white" class="ticker-item" *ngFor="let i of currencyexchange">{{i.ticker}} {{i.bid}} {{i.ask}}</div>
+        </div>
+    </div>
+</div>
+<div>&nbsp;</div>
+<h1 style="text-align:center;"> Top Headlines</h1>
+
+<div>
+    <div class="row">
+        <div *ngFor="let article of articles; let i=index">   
+            <div *ngIf="i%2==0" class="column" >
+                    <section>
+                        <article >
+                            <img src="{{article.urlToImage}}" alt=""  width="375" height="200"/>
+                            <h1>{{article.title}}</h1>
+                            <p> {{article.description}}</p>
+                            <a class="readmore" href="{{article.url}}">Read more</a>&nbsp;&nbsp;
+                        </article>
+                    </section>
+            </div>
+        </div>
+        <div *ngFor="let article of articles; let i=index">   
+            <div *ngIf="i%2==1" class="column" >
+                <section>
+                        <article >
+                            <img src="{{article.urlToImage}}" alt=""  width="375" height="200"/>
+                            <h1>{{article.title}}</h1>
+                            <p> {{article.description}}</p>
+                            <a class="readmore" href="{{article.url}}">Read more</a>&nbsp;&nbsp;
+                            
+                        </article>
+                </section>   
+            </div>
+        </div>
+    </div>
+</div> 

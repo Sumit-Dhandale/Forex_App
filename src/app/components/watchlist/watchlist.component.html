@@ -1,0 +1,31 @@
+
+<h1 style="text-align:center ;" >Watchlist</h1>
+<div class="row">
+    <div *ngFor="let article of list; let i=index">   
+        <div *ngIf="i%2==0" class="column" >
+                <section>
+                    <article >
+                        <img src="{{article.urlToImage}}" alt=""  width="325" height="200"/>
+                        <h1>{{article.title}}</h1>
+                        <p> {{article.description}}</p>
+                        <a class="readmore" href="{{article.url}}">Read more</a>&nbsp;&nbsp;
+                        <button  class="readmore" (click)="remove(article)">Remove</button>
+                    </article>
+                </section>
+        </div>
+    </div>
+    <div *ngFor="let article of list; let i=index">   
+        <div *ngIf="i%2==1" class="column" >
+            <section>
+                    <article >
+                        <img src="{{article.urlToImage}}" alt=""  width="325" height="200"/>
+                        <h1>{{article.title}}</h1>
+                        <p> {{article.description}}</p>
+                        <a class="readmore" href="{{article.url}}">Read more</a>&nbsp;&nbsp;
+                        <button  class="readmore" (click)="remove(article)">Remove</button>
+                    </article>
+            </section>   
+        </div>
+    </div>
+</div>
+

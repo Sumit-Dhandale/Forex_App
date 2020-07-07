@@ -1,0 +1,25 @@
+<div style = "margin-left: 250px;" >
+  <form class="example" style="margin:auto;max-width:300px">
+    <input class="text" type="text" placeholder="Search by Currencies" name="search2" (keyup)='search($event.target.value)'>
+  </form>
+  <br>
+  <br>
+  <div class="scrollit">
+    <table id="myTable"  >
+      <tr class="header">
+        <th *ngFor = "let column of headers">
+          <span> {{column}}</span>
+        </th>
+      </tr>
+      <tr *ngFor="let i of filterdata">
+        <td>{{i.ticker}}</td>
+        <td>{{i.bid}}</td>
+        <td>{{i.ask}}</td>
+        <td>{{i.open}}</td>
+        <td>{{i.low}}</td>
+        <td>{{i.high}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
